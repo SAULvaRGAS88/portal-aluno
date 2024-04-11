@@ -1,3 +1,22 @@
+
+#Portal do Aluno
+
+O Portal do Aluno é um projeto acadêmico que visa facilitar a comunicação entre o BackEnd e o FrontEnd por meio de uma API Restful. Desenvolvido utilizando o framework Strapi, este projeto oferece uma solução flexível e robusta para gerenciar informações relacionadas aos alunos, professores e cursos em um ambiente educacional.
+
+#Funcionalidades Principais
+ - Gestão de Alunos: Cadastre e gerencie informações dos alunos, como nome, sexo, telefone e curso.
+ - Gestão de Professores: Cadastre e gerencie informações dos professores, incluindo nome, matéria lecionada e foto.
+ - Gestão de Cursos: Cadastre e gerencie informações dos cursos, como título, horário e dia da aula.
+ - Integração com FrontEnd: Facilite a integração com o FrontEnd por meio de uma API Restful intuitiva e bem documentada.
+
+#Desenvolvedor
+ - Saul Vargas
+ 
+ <sub> 🚀🚀🚀  [Linkedin](https://www.linkedin.com/in/saul-vargas-68a97347/).</sub>
+
+
+
+
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
