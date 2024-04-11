@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alunos",
+  "info": {
+    "singularName": "aluno",
+    "pluralName": "alunos",
+    "displayName": "Aluno"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "sexo": {
+      "type": "string",
+      "required": true
+    },
+    "telefone": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

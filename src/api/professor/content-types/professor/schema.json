@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "professors",
+  "info": {
+    "singularName": "professor",
+    "pluralName": "professors",
+    "displayName": "Professor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "professor_materia": {
+      "type": "string",
+      "required": true
+    },
+    "fotoAvatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
