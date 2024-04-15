@@ -23,6 +23,12 @@
     "hora_aula": {
       "type": "string",
       "required": true
+    },
+    "alunos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::aluno.aluno",
+      "mappedBy": "cursos"
     }
   }
 }

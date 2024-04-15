@@ -4,7 +4,8 @@
   "info": {
     "singularName": "aluno",
     "pluralName": "alunos",
-    "displayName": "Aluno"
+    "displayName": "Aluno",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,12 @@
     "telefone": {
       "type": "string",
       "required": true
+    },
+    "cursos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::curso.curso",
+      "inversedBy": "alunos"
     }
   }
 }
