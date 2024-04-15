@@ -794,6 +794,7 @@ export interface ApiAlunoAluno extends Schema.CollectionType {
     singularName: 'aluno';
     pluralName: 'alunos';
     displayName: 'Aluno';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -802,6 +803,11 @@ export interface ApiAlunoAluno extends Schema.CollectionType {
     nome: Attribute.String & Attribute.Required;
     sexo: Attribute.String & Attribute.Required;
     telefone: Attribute.String & Attribute.Required;
+    cursos: Attribute.Relation<
+      'api::aluno.aluno',
+      'manyToMany',
+      'api::curso.curso'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -835,6 +841,11 @@ export interface ApiCursoCurso extends Schema.CollectionType {
     curso_materia: Attribute.String & Attribute.Required;
     dia_aula: Attribute.String & Attribute.Required;
     hora_aula: Attribute.String & Attribute.Required;
+    alunos: Attribute.Relation<
+      'api::curso.curso',
+      'manyToMany',
+      'api::aluno.aluno'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
