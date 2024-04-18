@@ -800,7 +800,7 @@ export interface ApiAlunoAluno extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    nome: Attribute.String & Attribute.Required;
+    nome: Attribute.String & Attribute.Required & Attribute.Unique;
     sexo: Attribute.String & Attribute.Required;
     telefone: Attribute.String & Attribute.Required;
     cursos: Attribute.Relation<

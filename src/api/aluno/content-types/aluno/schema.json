@@ -14,7 +14,8 @@
   "attributes": {
     "nome": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "sexo": {
       "type": "string",
