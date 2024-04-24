@@ -24,11 +24,11 @@
       "type": "string",
       "required": true
     },
-    "alunos": {
+    "aluno": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::aluno.aluno",
-      "mappedBy": "cursos"
+      "inversedBy": "cursos"
     }
   }
 }
