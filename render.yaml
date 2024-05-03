@@ -1,0 +1,6 @@
+services:
+  - name: portal-aluno
+    env:
+      ADMIN_PATH: /admin
+      STRAPI_ADMIN_BACKEND_URL: https://portal-aluno.onrender.com
+      STRAPI_TELEMETRY_DISABLED: false
