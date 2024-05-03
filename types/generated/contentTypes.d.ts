@@ -805,7 +805,7 @@ export interface ApiAlunoAluno extends Schema.CollectionType {
     telefone: Attribute.String & Attribute.Required;
     cursos: Attribute.Relation<
       'api::aluno.aluno',
-      'oneToMany',
+      'manyToMany',
       'api::curso.curso'
     >;
     createdAt: Attribute.DateTime;
@@ -841,9 +841,9 @@ export interface ApiCursoCurso extends Schema.CollectionType {
     curso_materia: Attribute.String & Attribute.Required;
     dia_aula: Attribute.String & Attribute.Required;
     hora_aula: Attribute.String & Attribute.Required;
-    aluno: Attribute.Relation<
+    alunos: Attribute.Relation<
       'api::curso.curso',
-      'manyToOne',
+      'manyToMany',
       'api::aluno.aluno'
     >;
     createdAt: Attribute.DateTime;

@@ -27,9 +27,9 @@
     },
     "cursos": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::curso.curso",
-      "mappedBy": "aluno"
+      "inversedBy": "alunos"
     }
   }
 }
